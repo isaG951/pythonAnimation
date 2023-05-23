@@ -1,160 +1,477 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/#use-with-ide
-.pdm.toml
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+import simplegui
+import math
+global x
+global m1
+global s1
+global m2
+global m3
+global m4
+global a
+global a2
+global b
+global b2
+global ast
+global bst
+global b3
+global a3
+global b4
+global a4
+global c
+global c2
+global d
+global d2
+global cst
+global dst
+global d3
+global c3
+global d4
+global c4
+global e
+global e2
+global f
+global f2
+global est
+global fst
+global f3
+global e3
+global f4
+global e4
+global g
+global g2
+global h
+global h2
+global gst
+global hst
+global h3
+global g3
+global h4
+global g4
+global y
+m1 = 0
+s1 = 0
+m2 = 0
+m3 = 0
+m4 = 0
+y = -30
+x = 0
+g = 100
+g2 = 0
+h = 0
+h2 = 0
+g3 = 0
+g4 = 0
+h3 = 0
+h4 = 0
+gst = "false"
+hst = "true"
+e = 0
+e2 = 0
+f = 100
+f2 = 0
+e3 = 0
+e4 = 0
+f3 = 0
+f4 = 0
+est = "false"
+fst = "true"
+c = -100
+c2 = 0
+d = 0
+d2 = 0
+c3 = 0
+c4 = 0
+d3 = 0
+d4 = 0
+cst = "false"
+dst = "false"
+a = 0
+a2 = 0
+b = -100
+b2 = 0
+a3 = 0
+a4 = 0
+b3 = 0
+b4 = 0
+ast = "true"
+bst = "true"
+def draw_handler(canvas):
+    global m1
+    global s1
+    global m2
+    global m3
+    global m4
+#back left m1
+    canvas.draw_circle((20 - m1,1100),600,1,"#25610b","#25610b")
+    canvas.draw_circle((0 - m1,1080),580,1,"#2a6e0d","#2a6e0d")
+    canvas.draw_circle((1220 - m1,1100),600,1,"#25610b","#25610b")
+    canvas.draw_circle((1200 - m1,1080),580,1,"#2a6e0d","#2a6e0d")
+#back right m1
+    canvas.draw_circle((900 - m1,1100),600,1,"#25610b","#25610b")
+    canvas.draw_circle((880 - m1,1080),580,1,"#2a6e0d","#2a6e0d")
+    canvas.draw_circle((2100 - m1,1100),600,1,"#25610b","#25610b")
+    canvas.draw_circle((2080 - m1,1080),580,1,"#2a6e0d","#2a6e0d")
+#middle center m2
+    canvas.draw_circle((500 - m2,1100),500,1,"#31800f","#31800f")
+    canvas.draw_circle((480 - m2,1080),480,1,"#378c12","#378c12")
+    canvas.draw_circle((1700 - m2,1100),500,1,"#31800f","#31800f")
+    canvas.draw_circle((1680 - m2,1080),480,1,"#378c12","#378c12")
+#middle right m2
+    canvas.draw_circle((1200 - m2,1100),400,1,"#31800f","#31800f")
+    canvas.draw_circle((1180 - m2,1080),380,1,"#378c12","#378c12")
+    canvas.draw_circle((2400 - m2,1100),400,1,"#31800f","#31800f")
+    canvas.draw_circle((2380 - m2,1080),380,1,"#378c12","#378c12")
+#front left m3 
+    canvas.draw_circle((200 - m3,1100),400,1,"#3c9c13","#3c9c13")
+    canvas.draw_circle((180 - m3,1080),380,1,"#42a617","#42a617")
+    canvas.draw_circle((1400 - m3,1100),400,1,"#3c9c13","#3c9c13")
+    canvas.draw_circle((1380 - m3,1080),380,1,"#42a617","#42a617")
+#front right m3
+    canvas.draw_circle((1000 - m3,1100),300,1,"#3c9c13","#3c9c13")
+    canvas.draw_circle((980 - m3,1080),280,1,"#42a617","#42a617")
+    canvas.draw_circle((2200 - m3,1100),300,1,"#3c9c13","#3c9c13")
+    canvas.draw_circle((2180 - m3,1080),280,1,"#42a617","#42a617")
+#front center m4
+    canvas.draw_circle((600 - m4,1100),300,1,"#33a813","#33a813")
+    canvas.draw_circle((580 - m4,1080),280,1,"#3ab818","#3ab818")
+    canvas.draw_circle((1800 - m4,1100),300,1,"#33a813","#33a813")
+    canvas.draw_circle((1780 - m4,1080),280,1,"#3ab818","#3ab818")
+#road
+    canvas.draw_polygon([(0,1000),(0,1200),(1200,1200),(1200,1000)], 1, "#545454","#545454")
+#stripes
+    canvas.draw_polygon([(0,1010),(0,1020),(1200,1020),(1200,1010)], 1, "white","white")
+    global x
+    global y
+#moving lines
+    for i in range(1,5200,80):
+        canvas.draw_line((-1200 -x + i, 1150),(-1160 - x + i, 1150),10,"white")
+    global a
+    global b
+    global ast
+    global bst
+    global b2
+    global a2
+    global b3
+    global a3
+    global b4
+    global a4      
+    global c
+    global d
+    global cst
+    global dst
+    global d2
+    global c2
+    global d3
+    global c3
+    global d4
+    global c4 
+    global e
+    global f
+    global est
+    global fst
+    global f2
+    global e2
+    global f3
+    global e3
+    global f4
+    global e4
+    global g
+    global h
+    global gst
+    global hst
+    global h2
+    global g2
+    global h3
+    global g3
+    global h4
+    global g4
+#front wheel
+    canvas.draw_line((450 + x,1000 + y),(450 + g4 + x,1000 + h4 + y),5,"#b5b5b5")
+    canvas.draw_line((450 + x,1000 + y),(450 + e4 + x,1000 + f4 + y),5,"#b5b5b5")
+    canvas.draw_line((450 + x,1000 + y),(450 + c4 + x,1000 + d4 + y),5,"#b5b5b5")
+    canvas.draw_line((450 + x,1000 + y),(450 + a4 + x,1000 + b4 + y),5,"#b5b5b5")
+    canvas.draw_circle((450 + x,1000 + y),120,15,"black")
+    canvas.draw_circle((450 + x,1000 + y),115,10,"#5c5c5c")
+#back wheel
+    canvas.draw_line((0 + x,1000 + y),(0 + g4 + x,1000 + h4 + y),5,"#b5b5b5")
+    canvas.draw_line((0 + x,1000 + y),(0 + e4 + x,1000 + f4 + y),5,"#b5b5b5")
+    canvas.draw_line((0 + x,1000 + y),(0 + c4 + x,1000 + d4 + y),5,"#b5b5b5")
+    canvas.draw_line((0 + x,1000 + y),(0 + a4 + x,1000 + b4 + y),5,"#b5b5b5")
+    canvas.draw_circle((0 + x,1000 + y),120,15,"black")
+    canvas.draw_circle(( x,1000 + y),115,10,"#5c5c5c")
+#chains
+    canvas.draw_line((0 + x,1000 + y),(200 + x,970 + y),2,"#c9c9c9")
+    canvas.draw_line((0 + x,1000 + y),(200 + x,930 + y),2,"#c9c9c9")
+#petal
+    canvas.draw_line((200 + x,1050 + y),(200 + x,950 + y),10,"#c9c9c9")
+    canvas.draw_polygon([(180 + x,1050 + y),(220 + x, 1050 + y),(220+x,1070 + y),(180 + x, 1070 + y)],3,"black","black")
+#turning gear
+    canvas.draw_circle((200 + x,950 + y),20,3,"#c9c9c9")
+    canvas.draw_circle((200 + x,950 + y),19,2,"#828282")
+#back to gear
+    canvas.draw_line((0 + x,1000 + y),(200 + x,950 + y),10,"#9c0d03")
+    canvas.draw_line((0 + x,995 + y),(200 + x,945 + y),5,"#d91204")
+#front tire support
+    canvas.draw_line((450 + x,1000 + y),(325 + x,650 + y),10,"#d91204")
+    canvas.draw_line((445 + x,1000 + y),(320 + x,650 + y),5,"#9c0d03")
+#handle bar
+    canvas.draw_line((250 + x,650 + y),(325 + x,650 + y),10,"#d91204")
+    canvas.draw_line((250 + x,655 + y),(325 + x,655 + y),5,"#9c0d03")
+#handles
+    canvas.draw_line((250 + x,651 + y),(275 + x,651 + y),13,"black")
+#horizontal main
+    canvas.draw_line((171 + x,790 + y),(375 + x,790 + y),10,"#d91204")
+    canvas.draw_line((171 + x,795 + y),(375 + x,795 + y),5,"#9c0d03")
+#diaganal main
+    canvas.draw_line((200 + x,950 + y),(375 + x,790 + y),10,"#d91204")
+    canvas.draw_line((200 + x,955 + y),(375 + x,795 + y),5,"#9c0d03")
+#seat bar
+    canvas.draw_line((235 + x,918 + y),(160 + x,768 + y),10,"#d91204")
+    canvas.draw_line((236 + x,914 + y),(165 + x,768 + y),5,"#9c0d03")
+#back tire support
+    canvas.draw_line((0 + x,1000 + y),(171 + x,790 + y),10,"#d91204")
+    canvas.draw_line((2 + x,1003 + y),(171 + x,795 + y),5,"#9c0d03")
+#seat
+    canvas.draw_polygon([(220 + x,768 + y),(120 + x,768 + y),(120 + x,748 + y),(220 + x,748 + y)],1,"#e3b181", "#e3b181")
+    canvas.draw_polygon([(220 + x,748 + y),(220 + x,768 + y),(120 + x,768 + y),(120 + x,763 + y),(215 + x, 763 + y),(215 + x, 748 + y)],1,"#c49364", "#c49364")
+#basket
+    canvas.draw_polygon([(336 + x,664 + y),(360 + x,734 + y),(420 + x, 734 + y),(425 + x, 664 + y)],1,"#e3b181", "#e3b181")
+#basket lines
+    canvas.draw_line((344 + x,664 + y),(368 + x,734 + y),2,"#c79565")
+    canvas.draw_line((354 + x,664 + y),(378 + x,734 + y),2,"#c79565")
+    canvas.draw_line((364 + x,664 + y),(388 + x,734 + y),2,"#c79565")
+    canvas.draw_line((374 + x,664 + y),(398 + x,734 + y),2,"#c79565")
+    canvas.draw_line((384 + x,664 + y),(408 + x,734 + y),2,"#c79565")
+    canvas.draw_line((394 + x,664 + y),(418 + x,734 + y),2,"#c79565")
+    
+    canvas.draw_line((404 + x,664 + y),(421 + x,715 + y),2,"#c79565")
+    canvas.draw_line((414 + x,664 + y),(423 + x,690 + y),2,"#c79565")
+    canvas.draw_line((424 + x,664 + y),(425 + x,666 + y),2,"#c79565")
+    
+    canvas.draw_line((339 + x,664 + y),(363 + x,734 + y),2,"#c79565")
+    canvas.draw_line((349 + x,664 + y),(373 + x,734 + y),2,"#c79565")
+    canvas.draw_line((359 + x,664 + y),(383 + x,734 + y),2,"#c79565")
+    canvas.draw_line((369 + x,664 + y),(393 + x,734 + y),2,"#c79565")
+    canvas.draw_line((379 + x,664 + y),(403 + x,734 + y),2,"#c79565")
+    canvas.draw_line((389 + x,664 + y),(413 + x,734 + y),2,"#c79565")
+    
+    canvas.draw_line((399 + x,664 + y),(420 + x,727 + y),2,"#c79565")
+    canvas.draw_line((409 + x,664 + y),(422 + x,703 + y),2,"#c79565")
+    canvas.draw_line((419 + x,664 + y),(424 + x,678 + y),2,"#c79565")
+    
+    
+    if a <= -100:
+        ast = "true"
+    if a >= 100:
+        ast = "false"
+    if b <= -100:
+        bst = "true"
+    if b >= 100:
+        bst = "false"
+    if ast == "true":
+        
+        if a == 100:
+            a = a + 10
+            a4 = 0
+        else:
+            a = a + 10
+            a2 = 10000 - a**2
+            a4 = math.sqrt(a2)
+    if ast == "false":
+        
+        if a == -100:
+            a = a - 10
+            a4 = 0
+        else:
+            a = a - 10
+            a2 = 10000 - a**2
+            a3 = math.sqrt(a2)
+            a4 = a3 * -1
+    if bst == "true":
+        
+        if b == 100:
+            b = b + 10
+            b4 = 0
+        else:
+            b = b + 10
+            b2 = 10000 - b**2
+            b4 = math.sqrt(b2)
+    if bst == "false":
+        
+        if b == -100:
+            b = b - 10
+            b4 = 0
+        else:
+            b = b - 10
+            b2 = 10000 - b**2
+            b3 = math.sqrt(b2)
+            b4 = b3 * -1
+        
+    if c <= -100:
+        cst = "true"
+    if c >= 100:
+        cst = "false"
+    if d <= -100:
+        dst = "true"
+    if d >= 100:
+        dst = "false"
+        
+    if cst == "true":
+        
+        if c == 100:
+            c = c + 10
+            c4 = 0
+        else:
+            c = c + 10
+            c2 = 10000 - c**2
+            c4 = math.sqrt(c2)
+    if cst == "false":
+        
+            
+        if c == -100:
+            c = c - 10
+            c4 = 0
+        else:
+            c = c - 10
+            c2 = 10000 - c**2
+            c3 = math.sqrt(c2)
+            c4 = c3 * -1
+    if dst == "true":
+       
+        if d == 100:
+            d = d + 10
+            d4 = 0
+        else:
+            d = d + 10
+            d2 = 10000 - d**2
+            d4 = math.sqrt(d2)
+    if dst == "false":
+        
+        if d == -100:
+            d = d - 10
+            d4 = 0
+        else:
+            d = d - 10
+            d2 = 10000 - d**2
+            d3 = math.sqrt(d2)
+            d4 = d3 * -1
+            
+    if e <= -100:
+        est = "true"
+    if e >= 100:
+        est = "false"
+    if f <= -100:
+        fst = "true"
+    if f >= 100:
+        fst = "false"
+        
+    if est == "true":
+       
+        if e == 100:
+            e = e + 10
+            e4 = 0
+        else:
+            e = e + 10
+            e2 = 10000 - e**2
+            e4 = math.sqrt(e2)
+    if est == "false":
+        
+        if e == -100:
+            e = e - 10
+            e4 = 0
+        else:
+            e = e - 10
+            e2 = 10000 - e**2
+            e3 = math.sqrt(e2)
+            e4 = e3 * -1
+    if fst == "true":
+        
+        if f == 100:
+            f = f + 10
+            f4 = 0
+        else:
+            f = f + 10
+            f2 = 10000 - f**2
+            f4 = math.sqrt(f2)
+    if fst == "false":
+        
+        if f == -100:
+            f = f - 10
+            f4 = 0
+        else:
+            f = f - 10
+            f2 = 10000 - f**2
+            f3 = math.sqrt(f2)
+            f4 = f3 * -1
+    if g <= -100:
+        gst = "true"
+    if g >= 100:
+        gst = "false"
+    if h <= -100:
+        hst = "true"
+    if h >= 100:
+        hst = "false"
+        
+    if gst == "true":
+        
+        if g == 100:
+            g = g + 10
+            g4 = 0
+        else:
+            g = g + 10
+            g2 = 10000 - g**2
+            g4 = math.sqrt(g2)
+    if gst == "false":
+        
+        if g == -100:
+            g = g - 10
+            g4 = 0
+        else:
+            g = g - 10
+            g2 = 10000 - g**2
+            g3 = math.sqrt(g2)
+            g4 = g3 * -1
+    if hst == "true":
+        
+        if h == 100:
+            h = h + 10
+            h4 = 0
+        else:
+            h = h + 10
+            h2 = 10000 - h**2
+            h4 = math.sqrt(h2)
+    if hst == "false":
+        
+        if h == -100:
+            h = h - 10
+            h4 = 0
+        else:
+            h = h - 10
+            h2 = 10000 - h**2
+            h3 = math.sqrt(h2)
+            h4 = h3 * -1
+    m1 = m1 + .05
+    s1 = s1 + .05
+    m2 = m2 + .1
+    m3 = m3 + .5
+    m4 = m4 + 1
+    
+    if m1 >= 1200:
+        m1 = 0
+    if m1 >= 1400:
+        m1 = 0
+    if m2 >= 1200:
+        m2 = 0
+    if m3 >= 1200:
+        m3 = 0
+    if m4 >= 1200:
+        m4 = 0
+    x = x + 10
+    if x > 1320:
+        x = -600
+#sun
+    canvas.draw_circle((150 - m1,150),100,1,"#f6ff00","#f6ff00")
+    canvas.draw_circle((1550 - m1,150),100,1,"#f6ff00","#f6ff00")
+frame = simplegui.create_frame('Testing', 1200, 1200)
+frame.set_canvas_background("#429eff")
+frame.set_draw_handler(draw_handler)
+frame.start()
